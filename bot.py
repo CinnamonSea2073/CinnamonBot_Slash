@@ -13,9 +13,10 @@ from mcipc.rcon.je import Client
 import yaml
 import random
 from googletrans import Translator
+from dotenv import load_dotenv
 
 load_dotenv()
-TOKEN = "ODk0MTU2OTAxMDc4Njc1NDg2.GqIRwc.rFIww51BQZ_qt_Z3DkFGoeKjmRqAa79JX7GBdY"
+TOKEN = os.getenv("TOKEN")
 bot = discord.Bot()
 GUILD_IDS = [879288794560471050]  # ← BOTのいるサーバーのIDを入れます
 
